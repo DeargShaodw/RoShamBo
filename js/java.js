@@ -23,22 +23,9 @@ function playRound () {
   let computerSelection = getComputerChoice();
 
 
-if  (playerSelection === computerSelection ) {
-  computerSelection = getComputerChoice().toLowerCase();
-  playerSelection = playerSelection.toLowerCase();
-  if (computerSelection == playerSelection) {
-    displayResults("Tie game!");
-}
-
-// else {
-//   console.log("words")
-// }
 
 console.log(playerSelection);
-console.log(randomItem);
-
-
-};
+console.log(computerSelection);
 
 
 };
