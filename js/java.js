@@ -16,22 +16,31 @@ function getComputerChoice () {
 // getComputerChoice();
 
 
-function runGame () {
+function playRound () {
 
-let playerSelection = prompt('Rock Paper Sciscor');
+  let playerSelection = prompt('Rock Paper Sciscor');
 
-let computerSelection = getComputerChoice();
+  let computerSelection = getComputerChoice();
+
 
 if  (playerSelection === computerSelection ) {
-  System.out.println("Draw");
+  computerSelection = getComputerChoice().toLowerCase();
+  playerSelection = playerSelection.toLowerCase();
+  if (computerSelection == playerSelection) {
+    displayResults("Tie game!");
 }
 
 // else {
-//   System.out.println("Words")
+//   console.log("words")
 // }
 
 console.log(playerSelection);
+console.log(randomItem);
+
 
 };
 
-runGame();
+
+};
+
+playRound();
