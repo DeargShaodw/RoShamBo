@@ -16,16 +16,16 @@ function getComputerChoice () {
 // getComputerChoice();
 
 
-function playRound () {
+function playRound (playerSelection) {
 
-  let playerSelection = prompt('Rock Paper Sciscor');
+  playerSelection = prompt('Rock Paper Sciscor')
 
-  let computerSelection = getComputerChoice();
+  computerSelection = getComputerChoice()
 
 
 
 console.log(playerSelection);
-console.log(computerSelection);
+
 
 
 };
